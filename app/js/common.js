@@ -80,6 +80,8 @@ $(document).ready(function(){
     function heightses() {
         if ($(window).width()>=480) {
             $('.cat-item-title').matchHeight({byRow: true,});
+            $('.product-item-title').matchHeight({byRow: true,});
+            $('.product-item-desc').matchHeight({byRow: true,});
         }
 
     }
@@ -92,6 +94,32 @@ $(document).ready(function(){
         });
 
         heightses();
+    });
+
+    $('.products-slider').owlCarousel({
+        loop: true,
+        nav: true,
+        items: 3,
+        margin: 30,
+        dots: false,
+        navText: ['', ''],
+        responsive : {
+            0 : {
+                margin: 10,
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            992: {
+              margin: 15
+            },
+            1200 : {
+                items: 3,
+                margin: 30
+            }
+        }
+
     });
 
     //E-mail Ajax Send

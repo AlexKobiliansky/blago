@@ -6,6 +6,16 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .product-item
+    padding: 20px 25px
+    &-img
+      height: 220px
+    &-bottom
+      padding-right: 0
+    .btn
+      padding-left: 20px
+      padding-right: 20px
+
   .cat-item
     &-title
       font-size: 18px
@@ -128,6 +138,20 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .s-cat
+    padding-bottom: 40px
+
+  .slider-wrap
+    margin-bottom: 40px
+
+  .slider-title
+    font-size: 24px
+    margin-bottom: 15px
+
+  .products-slider
+    margin: 0 auto
+    width: calc(100% - 30px)
+
   .cat-items-wrap
     grid-template-columns: repeat(1, 1fr)
 
@@ -147,6 +171,20 @@
 
 
 @media (max-width: 390px)
+
+  .product-item
+    &-img
+      height: 170px
+      margin-bottom: 20px
+    &-title
+      font-size: 16px
+    &-desc
+      font-size: 12px
+    &-price
+      font-size: 14px
+    .btn
+      font-size: 14px
+      padding: 8px 15px
 
   .intro-content
     h1

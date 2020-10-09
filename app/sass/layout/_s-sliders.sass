@@ -1,0 +1,107 @@
+.s-sliders
+  position: relative
+  +bg-main
+  padding-top: 20px
+  padding-bottom: 75px
+  overflow: hidden
+  .slider-title
+    text-align: center
+  .clouds
+    position: absolute
+    top: -400px
+    left: -400px
+
+.slider-title
+  font-family: "NotoSerif", sans-serif
+  font-size: 30px
+  text-transform: uppercase
+  margin-bottom: 25px
+  font-weight: normal
+  position: relative
+
+.slider-wrap
+  margin-bottom: 75px
+  &:last-child
+    margin-bottom: 0
+
+.product-item
+  padding: 27px 34px
+  background-color: #fff
+  border: 1px solid #d1d1d1
+  &-img
+    height: 260px
+    margin-bottom: 30px
+    img
+      width: 100%
+      height: 100%
+      object-fit: contain
+  &-title
+    font-family: "NotoSerif", sans-serif
+    font-size: 18px
+    line-height: 1.25
+    color: $text
+    margin-bottom: 10px
+    display: inline-block
+    &:hover
+      color: $acc-darkgold
+  &-desc
+    font-size: 14px
+    line-height: 1.15
+    color: #b2b2b2
+    margin-bottom: 13px
+  &-bottom
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-right: 35px
+  &-price
+    white-space: nowrap
+    font-size: 18px
+    font-family: "NotoSerif", sans-serif
+    font-weight: 700
+  .btn
+    padding-left: 28px
+    padding-right: 28px
+  &:hover
+    border-image: linear-gradient(to right, $acc-darkgold 0, $acc-lightgold 25%, $acc-darkgold 50%, $acc-lightgold 75%, $acc-darkgold 100%) 1
+    box-shadow: 0 0 15px 5px rgba(#000, .1)
+
+.products-slider
+  position: relative
+  .owl-stage-outer
+    padding: 15px 0
+  .owl-nav
+    position: absolute
+    top: calc(50% - 17.5px)
+    left: 0
+    width: 100%
+    button.owl-prev, button.owl-next
+      position: absolute
+      width: 35px
+      height: 35px
+      background-color: #fff
+      cursor: pointer
+      border: 1px solid $acc-darkgold
+      border-image: linear-gradient(to right, $acc-darkgold 0, $acc-lightgold 25%, $acc-darkgold 50%, $acc-lightgold 75%, $acc-darkgold 100%) 1
+      transform: rotate(45deg)
+      &:before
+        content: ''
+        position: absolute
+        background-image: url('../img/icons/slider-arrow.png')
+        +bg-cover
+        width: 10px
+        height: 18px
+        transform: rotate(-45deg)
+        left: calc(50% - 5px)
+        top: calc(50% - 9px)
+      &:hover
+        background-color: $acc-darkgold
+        border-image: none
+        &:before
+          background-image: url('../img/icons/slider-arrow-white.png')
+
+    button.owl-prev
+      transform: rotate(225deg)
+      left: -17.5px
+    button.owl-next
+      right: -17.5px
