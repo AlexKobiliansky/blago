@@ -1,0 +1,51 @@
+.s-intro
+  background-image: url('../img/bg-main.jpg')
+  background-position: left top
+  background-repeat: repeat-y
+  position: relative
+  overflow: hidden
+  .clouds
+    position: absolute
+    bottom: -473px
+    left: -647px
+
+.intro-content
+  padding: 80px 0 37px
+  h1
+    font-family: "NotoSerif" , sans-serif
+    text-align: center
+    font-size: 54px
+    opacity: .3
+    font-weight: 400
+    text-transform: uppercase
+    margin-bottom: 18px
+
+.intro-img
+  position: relative
+  height: 685px
+  border: 3px solid $acc-darkgold
+  border-image: linear-gradient(45deg, $acc-darkgold 0, $acc-lightgold 25%, $acc-darkgold 50%, $acc-lightgold 75%, $acc-darkgold 100%) 3
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.intro-notice
+  position: absolute
+  font-family: "NotoSerif", sans-serif
+  font-size: 26px
+  letter-spacing: 0.08em
+  text-transform: uppercase
+  padding: 26px 53px 30px 35px
+  background-color: #fff
+  left: 0
+  top: 50%
+  transform: translateY(-50%)
+  &:before
+    content: ''
+    position: absolute
+    left: -3px
+    top: 0
+    height: 100%
+    width: 3px
+    background-color: #fff

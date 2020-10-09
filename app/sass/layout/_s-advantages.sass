@@ -1,0 +1,28 @@
+.s-advantages
+  padding-top: 58px
+
+.advantages-wrap
+  display: grid
+  grid-template-columns: repeat(5, 1fr)
+  grid-gap: 10px
+
+.adv-item
+  text-align: center
+  .svg
+    height: 65px
+    width: auto
+    margin-bottom: 35px
+  &-title
+    font-size: 14px
+    font-weight: 300
+    line-height: 1.5
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      width: 52px
+      height: 2px
+      +grad-horisont
+      left: 50%
+      transform: translateX(-50%)
+      top: -15px
