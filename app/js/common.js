@@ -77,6 +77,23 @@ $(document).ready(function(){
         }, 'xml');
     });
 
+    function heightses() {
+        if ($(window).width()>=480) {
+            $('.cat-item-title').matchHeight({byRow: true,});
+        }
+
+    }
+
+    heightses();
+
+    $(window).on('load', function (){
+        $(window).resize(function() {
+            heightses();
+        });
+
+        heightses();
+    });
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);

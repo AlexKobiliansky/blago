@@ -6,6 +6,12 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .cat-item
+    &-title
+      font-size: 18px
+    &-img
+      height: 260px
+
   .intro-img
     height: 550px
 
@@ -62,6 +68,14 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .cat-items-wrap
+    grid-template-columns: repeat(2, 1fr)
+
+  .cat-notice
+    font-size: 12px
+    padding-top: 7px
+    padding-bottom: 7px
+
   .intro-content
     padding-top: 50px
     h1
@@ -113,6 +127,10 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .cat-items-wrap
+    grid-template-columns: repeat(1, 1fr)
+
   .intro-content
     h1
       font-size: 28px

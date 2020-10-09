@@ -1,0 +1,70 @@
+.s-cat
+  padding-top: 85px
+
+.cat-items-wrap
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-gap: 30px
+
+.cat-item
+  text-align: center
+  &-title
+    font-family: "NotoSerif", sans-serif
+    font-size: 21px
+    text-transform: uppercase
+    position: relative
+    margin-bottom: 30px
+    &:after
+      content: ''
+      position: absolute
+      width: 56px
+      height: 2px
+      +grad-horisont
+      left: 50%
+      transform: translateX(-50%)
+      bottom: -15px
+  &-img
+    position: relative
+    height: 340px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+    .btn
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+      transition: opacity .3s ease
+      opacity: 0
+    &:before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      left: 0
+      top: 0
+      background-color: $acc-darkgold
+      opacity: 0
+      +mt(.3s)
+    &:hover
+      .btn
+        opacity: 1
+      &:before
+        opacity: .8
+
+.cat-notice
+  margin-top: 30px
+  font-size: 14px
+  padding: 10px 18px
+  line-height: 1.5
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    height: 100%
+    width: 4px
+    +grad-angle
+
