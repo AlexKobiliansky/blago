@@ -82,3 +82,14 @@ ul
   &:hover
     background-image: linear-gradient(to top, $acc-lightgold 0, $acc-darkgold 100%)
     border-image: linear-gradient(to top, $acc-lightgold 0, $acc-darkgold 100%) 2
+
+
+form
+  input
+    &.error
+      border-color: red!important
+      color: red!important
+      &::placeholder
+        color: red!important
+  .help-block
+    display: none

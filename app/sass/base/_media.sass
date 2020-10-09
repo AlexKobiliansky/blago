@@ -6,6 +6,12 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .section-form
+    &:before
+      left: -150px
+    &:after
+      right: -150px
+
   .product-item
     padding: 20px 25px
     &-img
@@ -78,6 +84,11 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .section-form
+    width: 480px
+    h2
+      font-size: 20px
+
   .cat-items-wrap
     grid-template-columns: repeat(2, 1fr)
 
@@ -124,6 +135,16 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+
+  .section-form
+    width: 100%
+    max-width: 480px
+    &:before, &:after
+      display: none
+    .form-content
+      width: 100%
+
+
   .main-head
     padding-top: 15px
     .container
@@ -137,6 +158,9 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-form
+    padding: 50px 0
 
   .s-cat
     padding-bottom: 40px
@@ -171,6 +195,11 @@
 
 
 @media (max-width: 390px)
+
+  .s-form
+    h2
+      font-size: 18px
+
 
   .product-item
     &-img

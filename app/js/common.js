@@ -122,6 +122,23 @@ $(document).ready(function(){
 
     });
 
+
+    $.validate({
+        form : '.contact-form',
+        scrollToTopOnError: false
+    });
+
+    var uPhone = $('.user-phone');
+    uPhone.mask("+7 (999) 999-99-99",{autoclear: false});
+
+    uPhone.on('click', function (ele) {
+        var needelem = ele.target || event.srcElement;
+        needelem.setSelectionRange(4,4);
+        needelem.focus();
+    });
+
+    $('input[type="checkbox"]').styler();
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);

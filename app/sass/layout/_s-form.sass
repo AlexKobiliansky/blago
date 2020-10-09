@@ -1,0 +1,80 @@
+.s-form
+  text-align: center
+  padding: 85px 0 80px
+  background-image: url('../img/bg-form.jpg')
+  background-repeat: repeat
+  background-position-y: -20px
+  overflow: hidden
+
+
+.section-form
+  width: 615px
+  margin: 0 auto
+  position: relative
+  h2
+    font-family: "NotoSerif", sans-serif
+    font-size: 24px
+    text-transform: uppercase
+    font-weight: normal
+    line-height: 1.25
+    margin-bottom: 15px
+  .form-desc
+    font-weight: 300
+    margin-bottom: 35px
+  .form-content
+    width: 420px
+    margin: 0 auto
+  label
+    width: 100%
+    margin-bottom: 24px
+    position: relative
+    &:before, &:after
+      content: ''
+      position: absolute
+    &:before
+      width: 20px
+      height: 20px
+      background-image: url('../img/icons/phone-icon-grey.png')
+      +bg-cover
+      left: 15px
+      top: calc(50% - 10px)
+    &:after
+      width: 1px
+      height: 22px
+      background-color: #e8e8e8
+      left: 44px
+      top: calc(50% - 11px)
+
+  input
+    width: 100%
+    font-size: 14px
+    font-weight: 300
+    background-color: #fff
+    border: 1px solid #e8e8e8
+    padding: 18px 20px 16px 54px
+    &::placeholder
+      color: #b2b2b2
+    &:focus
+      border-color: darken(#e8e8e8, 10%)
+      &::placeholder
+        color: darken(#b2b2b2, 10%)
+  .btn
+    background-color: #fff
+    width: 100%
+    padding-top: 13px
+    padding-bottom: 15px
+  &:before, &:after
+    content: ''
+    position: absolute
+    width: 154px
+    height: 296px
+    background-image: url('../img/branch-img.png')
+    +bg-cover
+    top: calc(50% - 150px)
+  &:before
+    left: -220px
+  &:after
+    right: -220px
+    transform: scale(-1, 1)
+
+
