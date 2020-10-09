@@ -5,15 +5,106 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+  .main-mnu
+    padding-left: 0
+    font-size: 14px
+    &:before
+      display: none
+    li
+      margin-right: 60px
+      &:after
+        width: 30px
+        height: 2px
+        right: -45px
+
+  .top-infos-wrap, .top-phones-wrap
+    display: block
+
+  .top-phone
+    margin-bottom: 10px
+    &:last-child
+      margin-bottom: 0
+    .svg
+      top: -3px
+      position: relative
+      width: 16px
+      margin-right: 8px
+
+  .top-info
+    margin-bottom: 10px
+    &:last-child
+      margin-bottom: 0
+    .svg
+      top: -3px
+      position: relative
+      width: 20px
+      margin-right: 8px
+
+  .topline
+    justify-content: space-between
+
+
+
 
 // ≥992px
 +media-breakpoint-down(md)
 
+  .hamburger
+    display: block
+
+  .top-infos-wrap
+    display: none
+
+  .top-phones-wrap
+    display: none
+
+  .mnu-line
+    display: none
+
+  .topline
+    border-bottom: none
+    padding-bottom: 0
+
+  .main-head
+    .container
+      align-items: flex-start
+
+  .top-right-wrap
+    margin-left: auto
+
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .main-head
+    padding-top: 15px
+    .container
+      align-items: center
+
+  .head-logo-container
+    width: 100px
+
+  .head-content
+    width: calc(100% - 115px)
+
 // ≥480px
 +media-breakpoint-down(xs)
+
+
+@media (max-width: 390px)
+  .hamburger
+    margin-left: 10px
+
+  .top-cart
+    .span
+      font-size: 14px
+      margin-bottom: 3px
+    .sum
+      font-size: 10px
+    .svg
+      width: 30px
+      margin-right: 10px
+    &-content
+      width: calc(100% - 40px)
 
 
 /*==========  Mobile First  ==========*/

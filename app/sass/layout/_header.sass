@@ -1,0 +1,202 @@
+.main-head
+  padding-top: 30px
+  .container
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+
+.head-logo-container
+  width: 195px
+
+.head-content
+  width: calc(100% - 195px)
+
+.topline
+  display: flex
+  align-items: center
+  border-bottom: 1px solid #474747
+  padding-bottom: 20px
+  a
+    color: inherit
+    &:hover
+      .svg
+        fill: $acc-darkgold
+.top-info
+  display: flex
+  align-items: center
+  margin-right: 26px
+  .svg
+    width: 24px
+    height: auto
+    margin-right: 14px
+
+.top-phone
+  display: flex
+  align-items: center
+  margin-right: 26px
+  font-size: 18px
+  font-weight: 700
+  white-space: nowrap
+  .svg
+    width: 22px
+    height: auto
+    margin-right: 11px
+
+.top-cart
+  display: flex
+  align-items: center
+  .svg
+    width: 36px
+    height: auto
+    margin-right: 14px
+  &-content
+    width: calc(100% - 50px)
+    &>span
+      display: block
+    .span
+      font-weight: 500
+      margin-bottom: 6px
+    .sum
+      font-size: 12px
+      color: $acc-darkgold
+
+.mnu-line
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding-top: 12px
+
+.main-mnu
+  position: relative
+  padding-left: 49px
+  &:before
+    content: ''
+    position: absolute
+    width: 28px
+    height: 31px
+    background-image: url('../img/icons/grave-icon.svg')
+    +bg-cover
+    left: 0
+    top: calc(50% - 19px)
+  ul
+    display: flex
+    justify-content: space-between
+    align-items: center
+  li
+    position: relative
+    margin-right: 85px
+    letter-spacing: 0.06em
+    text-transform: uppercase
+    &:after
+      content: ''
+      position: absolute
+      width: 40px
+      height: 3px
+      +grad-horisont
+      right: -60px
+      top: calc(50% - 3px)
+    &:last-child
+      margin-right: 0
+      &:after
+        display: none
+  a
+    color: $text
+    &:hover
+      color: $acc-darkgold
+
+.top-phones-wrap, .top-infos-wrap
+  display: flex
+  align-items: center
+
+.hamburger
+  padding-right: 0
+  margin-left: 30px
+  display: none
+
+.top-right-wrap
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+
+
+//mmenu customization start
+.mm-navbar>*
+  padding: 0
+
+.mm-menu_theme-dark
+  background-color: transparent
+  background-image: url('../img/bg-main.jpg')
+  background-repeat: no-repeat
+  +bg-cover()
+  text-transform: uppercase
+
+.mm-navbars_bottom, .mm-navbars_top
+  background-image: none
+
+.mm-logo
+  display: block
+  margin: 0 auto
+  position: relative
+  top: 16px
+
+.mm-navbars_top
+  border-color: transparent
+
+.mm-listitem, .mm-listitem .mm-btn_next, .mm-listitem .mm-btn_next:before, .mm-listitem:after, .mm-listview
+  border-color: rgba(#fff, .3)
+
+.mm-listitem
+  a
+    padding-top: 14px
+    padding-bottom: 12px
+
+.mm-navbar
+  border: none
+
+
+.mm-menu_theme-dark .mm-navbar a, .mm-menu_theme-dark .mm-navbar>*
+  font-size: 20px
+  color: $acc-darkgold
+  letter-spacing: 2px
+
+.mm-menu_theme-dark .mm-listview a:not(.mm-btn_next)
+  color: $acc-darkgold
+
+.mm-menu a, .mm-menu a:active, .mm-menu a:hover, .mm-menu a:link, .mm-menu a:visited
+  color: $text
+
+.mm-menu_navbar_top-3 .mm-panels
+  top: 150px
+
+.mm-panels
+  background-image: none
+  li
+    padding: 7px 0 7px 22px
+    font-size: 16px
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      width: 10px
+      height: 10px
+      background-color: $text
+      left: 0
+      top: calc(50% - 5px)
+      transform: rotate(45deg)
+
+.user-options
+  font-size: 14px
+  padding-top: 50px
+  .top-info
+    margin-bottom: 20px
+    color: $text
+    margin-right: 0
+  .top-phone
+    font-size: 16px
+    margin-bottom: 20px
+    margin-right: 0
+
+
+
+//mmenu customization end

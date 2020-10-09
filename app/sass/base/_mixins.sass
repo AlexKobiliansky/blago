@@ -28,3 +28,8 @@
   bottom: 0
   right: 0
 
+@mixin grad-horisont()
+  background-image: linear-gradient(to right, $acc-darkgold 0, $acc-lightgold 25%, $acc-darkgold 50%, $acc-lightgold 75%, $acc-darkgold 100%)
+
+@mixin grad-angle()
+  background-image: linear-gradient(45deg, $acc-darkgold 0, $acc-lightgold 25%, $acc-darkgold 50%, $acc-lightgold 75%, $acc-darkgold 100%)
