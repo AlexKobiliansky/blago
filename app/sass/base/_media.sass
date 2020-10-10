@@ -117,6 +117,12 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .subcat-item
+    &-title
+      font-size: 18px
+    &-img
+      height: 240px
+
   .breadcrumbs
     padding: 20px 0 30px
 
@@ -243,6 +249,13 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .s-subcat
+    padding-bottom: 70px
+
+  .subcat-item
+    &-img
+      height: 180px
+
   .page-title
     font-size: 24px
 
@@ -299,6 +312,10 @@
 
 
 @media (max-width: 390px)
+
+  .subcat-items-wrap
+    grid-template-columns: repeat(1, 1fr)
+    grid-gap: 50px
 
   .popup-form
     h2

@@ -83,6 +83,9 @@ $(document).ready(function(){
             $('.product-item-title').matchHeight({byRow: true,});
             $('.product-item-desc').matchHeight({byRow: true,});
         }
+        if ($(window).width()>=391) {
+            $('.subcat-item-title').matchHeight({byRow: true,});
+        }
 
     }
 
