@@ -87,6 +87,15 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .popup-form
+    max-width: 760px
+    width: 100%
+    &-img
+      width: 300px
+    &-content
+      width: calc(100% - 300px)
+      padding: 30px 40px
+
   .contacts-block
     left: calc((100vw - 720px)/2)
 
@@ -141,6 +150,12 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .popup-form
+    &-img
+      display: none
+    &-content
+      width: 100%
+
   #map
     height: 400px
 
@@ -182,6 +197,11 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .popup-form
+    &-content
+      padding-top: 35px
+      padding-bottom: 35px
+
   .s-form
     padding: 50px 0
 
@@ -218,6 +238,21 @@
 
 
 @media (max-width: 390px)
+
+  .popup-form
+    h2
+      font-size: 20px
+      text-align: center
+    .form-desc
+      font-size: 14px
+      margin-bottom: 20px
+      text-align: center
+    &-content
+      padding-left: 15px
+      padding-right: 15px
+    .btn-wrap
+      text-align: center
+
 
   #map
     height: 300px

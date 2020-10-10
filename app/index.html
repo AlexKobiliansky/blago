@@ -27,6 +27,16 @@
 </head>
 
 <body>
+<!-- preloader -->
+<div class="preloader">
+	<div class="sk-folding-cube">
+		<div class="sk-cube sk-cube-1"></div>
+		<div class="sk-cube sk-cube-2"></div>
+		<div class="sk-cube sk-cube-4"></div>
+		<div class="sk-cube sk-cube-3"></div>
+	</div>
+</div>
+<!-- preloader -->
 <div id="page-container">
 	<!-- mobile-mnu -->
 	<div id="mobile-mnu" data-logo="img/logo.png">
@@ -62,7 +72,7 @@
 					8 800 000 00 00
 				</a>
 
-				<a href="#0" class="btn">Оставить заявку</a>
+				<a href="#popup-form" class="btn">Оставить заявку</a>
 			</div>
 		</div>
 	</div>
@@ -135,7 +145,7 @@
 							</ul>
 						</nav>
 
-						<a href="#0" class="btn">Оставить заявку</a>
+						<a href="#popup-form" class="btn">Оставить заявку</a>
 					</div>
 				</div>
 			</div>
@@ -601,6 +611,50 @@
 		</div>
 	</footer>
 
+</div>
+
+<div class="hidden">
+	<form class="contact-form popup-form" id="popup-form">
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="БЛАГО">
+		<input type="hidden" name="admin_email" value="alexey.kobilianskiy@gmail.com">
+		<input type="hidden" name="form_subject" value="Заявка с сайта БЛАГО">
+		<!-- END Hidden Required Fields -->
+
+		<div class="popup-form-content">
+			<h2>Оставить заявку</h2>
+			<div class="form-desc">
+				Мы перезвоним вам и согласуем дату и время
+			</div>
+
+			<div class="form-labels-wrap">
+				<label>
+					<span>Ваше имя</span>
+					<input type="text" placeholder="Анна Александровна" name="Имя" autocomplete="off" data-validation="custom"
+						   data-validation-regexp="^[a-zA-Zа-яА-Я ]{1,50}$">
+				</label>
+				<label>
+					<span>Номер телефона</span>
+					<input type="text" class="user-phone" name="Телефон" placeholder="+7 (953) 345-44-55"
+						   autocomplete="off" data-validation="custom"
+						   data-validation-regexp="\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
+				</label>
+			</div>
+
+			<label class="label-checkbox">
+				<input type="checkbox" required checked> <span>Я принимаю условия публичного договора оферты и даю согласие на обработку моих персональных данных.
+</span>
+			</label>
+
+			<div class="btn-wrap">
+				<button class="btn" type="submit">Отправить</button>
+			</div>
+
+		</div>
+		<div class="popup-form-img">
+			<img src="img/intro-img.jpg" alt="alt">
+		</div>
+	</form>
 </div>
 
 <script src="js/scripts.min.js"></script>
