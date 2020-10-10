@@ -1,0 +1,46 @@
+.s-nopage
+  overflow: hidden
+  +bg-main
+  height: 100vh
+  .clouds
+    position: absolute
+    bottom: 0
+    left: -600px
+  h1
+    font-size: 236px
+    font-weight: 500
+    line-height: 170px
+    margin-bottom: 15px
+  h2
+    font-size: 26px
+    font-weight: 100
+    margin-bottom: 30px
+
+
+
+.nopage-wrap
+  height: calc(100% - 151px)
+  display: flex
+  justify-content: center
+  align-items: center
+  text-align: center
+  overflow: hidden
+  .btn
+    padding: 15px 63px
+
+.nopage-content
+  width: 615px
+  position: relative
+  &:before, &:after
+    content: ''
+    position: absolute
+    width: 155px
+    height: 300px
+    background-image: url('../img/branch-img.png')
+    +bg-cover
+    top: -70px
+  &:before
+    left: -170px
+  &:after
+    transform: scale(-1, 1)
+    right: -170px

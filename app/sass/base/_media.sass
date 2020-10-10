@@ -3,8 +3,38 @@
 
 /*==========  Desktop First  ==========*/
 
+@media (max-width: 1500px)
+
+  .main-head
+    .btn
+
+
+  .s-nopage
+    .clouds
+      transform: scale(.6)
+      bottom: -50px
+      left: -700px
+    h1
+      font-size: 180px
+    h2
+      font-size: 20px
+
+  .nopage-content
+    &:before, &:after
+      height: 250px
+      width: 125px
+      top: -20px
+    &:before
+      left: -80px
+    &:after
+      right: -80px
+
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .s-nopage
+    .clouds
+      display: none
 
   .contacts-block
     left: calc((100vw - 960px)/2)
@@ -86,6 +116,12 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .nopage-content
+    &:before
+      left: -40px
+    &:after
+      right: -40px
 
   .popup-form
     max-width: 760px
@@ -196,6 +232,18 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .nopage-content
+    &:before, &:after
+      display: none
+
+  .s-nopage
+    h1
+      font-size: 140px
+      line-height: 1
+      margin-bottom: 0
+    h2
+      font-size: 18px
 
   .popup-form
     &-content
