@@ -285,3 +285,39 @@ form
   90%, 100%
     transform: perspective(140px) rotateY(180deg)
     opacity: 0
+
+
+.breadcrumbs
+  padding: 45px 0
+  a
+    display: inline-block
+    line-height: 1
+    font-size: 12px
+    font-weight: 300
+    position: relative
+    color: #ababab
+    margin-right: 18px
+    &:after
+      content: ''
+      position: absolute
+      width: 10px
+      height: 1px
+      background-color: #ababab
+      right: -16px
+      top: 50%
+      transform: translateY(-50%)
+    &:hover
+      color: $acc-darkgold
+    &:last-child
+      color: $acc-darkgold
+      pointer-events: none
+      &:after
+        display: none
+
+.page-title
+  font-family: "NotoSerif", sans-serif
+  font-size: 30px
+  font-weight: normal
+  text-transform: uppercase
+  margin-bottom: 45px
+  text-align: center

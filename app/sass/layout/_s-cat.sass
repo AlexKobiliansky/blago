@@ -1,6 +1,18 @@
 .s-cat
   padding-top: 85px
   padding-bottom: 70px
+  &.p-cat
+    position: relative
+    padding-top: 0
+    overflow: hidden
+    +bg-main
+    .clouds
+      position: absolute
+      left: -500px
+      top: 320px
+    .container
+      position: relative
+      z-index: 2
 
 .cat-items-wrap
   display: grid
