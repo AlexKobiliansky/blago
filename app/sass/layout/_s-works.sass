@@ -1,0 +1,82 @@
+.s-works
+  +bg-main
+  position: relative
+  overflow: hidden
+  padding-bottom: 105px
+  .clouds
+    position: absolute
+    left: -400px
+    bottom: -200px
+  .container
+    position: relative
+    z-index: 3
+
+.decor
+  position: absolute
+  top: 331px
+  background-color: #fff
+  z-index: 2
+  img
+    height: 485px
+    width: auto
+    opacity: .3
+
+  &-left
+    left: -600px
+  &-right
+    right: -600px
+
+
+.works-slider
+  margin-bottom: 20px
+  .owl-nav
+    position: absolute
+    top: calc(50% - 17.5px)
+    left: 0
+    width: 100%
+    button.owl-prev, button.owl-next
+      position: absolute
+      width: 35px
+      height: 35px
+      background-color: #fff
+      cursor: pointer
+      border: 1px solid $acc-darkgold
+      border-image: linear-gradient(to right, $acc-darkgold 0, $acc-lightgold 25%, $acc-darkgold 50%, $acc-lightgold 75%, $acc-darkgold 100%) 1
+      transform: rotate(45deg)
+      &:before
+        content: ''
+        position: absolute
+        background-image: url('../img/icons/slider-arrow.png')
+        +bg-cover
+        width: 10px
+        height: 18px
+        transform: rotate(-45deg)
+        left: calc(50% - 5px)
+        top: calc(50% - 9px)
+      &:hover
+        background-color: $acc-darkgold
+        border-image: none
+        &:before
+          background-image: url('../img/icons/slider-arrow-white.png')
+    button.owl-prev
+      transform: rotate(225deg)
+      left: -17.5px
+    button.owl-next
+      right: -17.5px
+
+.works-slide
+  height: 485px
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.works-slider-nav
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  grid-gap: 20px
+
+.works-nav
+  height: 220px
+  +bg-cover
+  cursor: pointer

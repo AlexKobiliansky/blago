@@ -160,6 +160,28 @@ $(document).ready(function(){
         hideAnimationDuration: 0
     });
 
+    $('.works-slider').owlCarousel({
+        loop:false,
+        nav:true,
+        items: 1,
+        thumbs: true,
+        dots: false,
+        thumbsPrerendered: true,
+        thumbItemClass: 'works-nav',
+        animateIn: "fadeIn",
+        animateOut: "fadeOut",
+        mouseDrag: false,
+        navText: ['', ''],
+        responsive : {
+            0 : {
+                nav: false
+            },
+            480: {
+                nav: true
+            }
+        }
+    });
+
     $('.spinner-amount').on('click', 'button', function(e){
         var parent = $(this).parents('.spinner-amount');
         var input = parent.find('.amount');

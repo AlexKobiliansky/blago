@@ -5,6 +5,12 @@
 
 @media (max-width: 1500px)
 
+  .decor
+    &-left
+      left: -700px
+    &-right
+      right: -700px
+
   .s-nopage
     .clouds
       transform: scale(.6)
@@ -27,6 +33,12 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .works-nav
+    height: 180px
+
+  .decor
+    display: none
 
   .cart-item
     &-info
@@ -149,6 +161,11 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .works-slider-wrap
+    padding: 0 20px
+
+  .works-nav
+    height: 120px
 
   .cart-top
     display: none
@@ -313,6 +330,18 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .works-slide
+    height: 300px
+
+  .works-slider
+    margin-bottom: 10px
+
+  .works-slider-nav
+    grid-gap: 10px
+
+  .works-nav
+    height: 100px
+
   .s-cart
     padding-bottom: 50px
 
@@ -415,6 +444,15 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-works
+    padding-bottom: 75px
+
+  .works-slide
+    height: 240px
+
+  .works-nav
+    height: 60px
 
   .cart-item
     &-del
@@ -555,6 +593,18 @@
 
 
 @media (max-width: 390px)
+
+  .works-slide
+    height: 180px
+
+  .works-slider
+    margin-bottom: 5px
+
+  .works-slider-nav
+    grid-gap: 5px
+
+  .works-nav
+    height: 50px
 
   .cart-item
     padding: 30px 20px
