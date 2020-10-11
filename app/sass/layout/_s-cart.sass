@@ -1,0 +1,145 @@
+.s-cart
+  +bg-main
+  position: relative
+  overflow: hidden
+  padding-bottom: 105px
+  .page-title
+    margin-bottom: 24px
+  .container
+    position: relative
+    z-index: 2
+  .clouds
+    position: absolute
+    left: -500px
+    bottom: -300px
+
+.cart
+  margin-bottom: 40px
+  box-shadow: 0 0 25px 10px rgba(#000, .07)
+
+.cart-top
+  background-color: #fff
+  border: 1px solid #e6e6e6
+  display: flex
+  text-align: center
+  padding: 18px 10px 14px
+  font-weight: 300
+  color: #ababab
+  justify-content: space-between
+  align-items: center
+
+.cart-item-price, .cart-top-price
+  width: 180px
+
+.cart-item-total, .cart-top-total
+  width: 180px
+
+.cart-item-mount, .cart-top-mount
+  width: 200px
+
+.cart-item-info, .cart-top-info
+  width: 440px
+
+.cart-item
+  background-color: #fff
+  display: flex
+  justify-content: space-between
+  align-items: center
+  border: 1px solid #e6e6e6
+  border-top: none
+  padding: 15px 10px 60px
+  position: relative
+  &-info
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+    padding-left: 45px
+  &-img
+    width: 120px
+    height: 150px
+    padding: 10px
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: contain
+    background-origin: content-box
+  &-content
+    width: calc(100% - 150px)
+    line-height: 1.35
+  &-title
+    display: inline-block
+    font-family: "NotoSerif", sans-serif
+    font-size: 18px
+    color: $text
+    margin-bottom: 5px
+    &:hover
+      color: $acc-darkgold
+  &-desc
+    font-size: 14px
+    font-weight: 300
+    color: #b2b2b2
+    margin-bottom: 10px
+  &-price, &-total
+    font-family: "NotoSerif", sans-serif
+    font-weight: 700
+    font-size: 18px
+    text-align: center
+  &-mount
+    button
+      width: 42px
+      height: 42px
+      border: 1px solid #cdcdcd
+      color: #cdcdcd
+      font-size: 0
+      background-color: transparent
+      cursor: pointer
+      +mt(.3s)
+      position: relative
+      &:before, &:after
+        content: ''
+        position: absolute
+        background-color: #cdcdcd
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        +mt(.3s)
+      &:before
+        width: 14px
+        height: 2px
+      &.up
+        &:after
+          width: 2px
+          height: 14px
+      &:hover
+        border-color: $acc-darkgold
+        background-color: $acc-darkgold
+        &:before, &:after
+          background-color: #fff
+    .spinner-amount
+      display: flex
+      justify-content: center
+      align-items: center
+    input
+      width: 56px
+      font-weight: 500
+      text-align: center
+      border: none
+      background-color: transparent
+      border-top: 1px solid #cdcdcd
+      border-bottom: 1px solid #cdcdcd
+      padding: 11px 0
+  &-del
+    position: absolute
+    z-index: 2
+    top: 15px
+    right: 20px
+    opacity: .5
+    &:hover
+      opacity: 1
+
+.cart-bottom
+  display: flex
+  justify-content: space-between
+  align-items: center
+  .btn
+    padding-left: 36px
+    padding-right: 36px
