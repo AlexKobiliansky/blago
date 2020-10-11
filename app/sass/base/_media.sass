@@ -132,6 +132,9 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .catalog
+    grid-template-columns: repeat(2, 1fr)
+
   .product
     &-left
       display: none
@@ -239,6 +242,9 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .catalog
+    grid-template-columns: repeat(1, 1fr)
+
   .product-slide
     height: 360px
   .product-nav
@@ -295,6 +301,17 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-catalog
+    padding-bottom: 50px
+
+  .filters
+    font-size: 14px
+    span
+      margin-right: 10px
+
+  .filter
+    margin-right: 22px
 
   .product
     &-slide
@@ -396,6 +413,9 @@
 
 
 @media (max-width: 390px)
+
+  .filters
+    font-size: 13px
 
   .product
     &-title
