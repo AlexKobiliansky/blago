@@ -1,0 +1,208 @@
+.s-product
+  padding-bottom: 90px
+
+.s-similars
+  padding-bottom: 90px
+
+.product
+  &-top
+    display: flex
+    margin-bottom: 60px
+  &-left
+    width: 615px
+    display: flex
+    justify-content: space-between
+  &-right
+    width: calc(100% - 615px)
+    padding-left: 50px
+  &-title
+    font-family: "NotoSerif", sans-serif
+    font-size: 26px
+    line-height: 1.3
+    text-transform: uppercase
+    font-weight: normal
+    margin-bottom: 25px
+  &-price
+    font-family: "NotoSerif", sans-serif
+    font-size: 28px
+    font-weight: 700
+    margin-bottom: 40px
+  &-bottomline
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 60px
+  .amount-wrap
+    button
+      width: 42px
+      height: 42px
+      border: 1px solid #cdcdcd
+      color: #cdcdcd
+      font-size: 0
+      background-color: transparent
+      cursor: pointer
+      +mt(.3s)
+      position: relative
+      &:before, &:after
+        content: ''
+        position: absolute
+        background-color: #cdcdcd
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        +mt(.3s)
+      &:before
+        width: 14px
+        height: 2px
+      &.up
+        &:after
+          width: 2px
+          height: 14px
+      &:hover
+        border-color: $acc-darkgold
+        background-color: $acc-darkgold
+        &:before, &:after
+          background-color: #fff
+    .spinner-amount
+      display: flex
+      justify-content: space-between
+      align-items: center
+    input
+      width: 60px
+      font-weight: 500
+      text-align: center
+      border: none
+      background-color: transparent
+
+.product-atribute
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 22px
+  span
+    width: calc(100% - 310px)
+    font-weight: 500
+  .jq-selectbox
+    width: 300px
+    li
+      &:hover
+        background: $acc-darkgold
+    &__select
+      height: auto
+      font-size: 14px
+      font-family: $default-font
+      padding: 14px 55px 12px 23px
+      line-height: 1
+      background: transparent
+      box-shadow: none
+      border-radius: 0
+      border: 1px solid #cdcdcd!important
+    &.opened
+      .jq-selectbox__trigger-arrow
+        transform: rotate(180deg)
+  .jq-selectbox__select-text
+    padding-top: 1px
+  .jq-selectbox__trigger
+    border: none
+  .jq-selectbox__trigger-arrow
+    border: none
+    width: 13px
+    height: 7px
+    background-image: url('../img/icons/select-arrow.png')
+    +bg-cover
+    right: 24px
+    top: calc(50% - 3.5px)
+    position: absolute
+  .jq-selectbox__dropdown
+    border-radius: 0
+
+
+
+
+.product-slider
+  width: calc(100% - 150px)
+  &-nav
+    width: 128px
+  &-mobile
+    display: none
+
+.product-nav
+  height: 101px
+  margin-bottom: 12px
+  border: 1px solid #cdcdcd
+  background-size: contain
+  background-position: center center
+  background-repeat: no-repeat
+  cursor: pointer
+  width: 100%
+  &:last-child
+    margin-bottom: 0
+  &.active
+    border-color: $acc-darkgold
+
+.product-slide
+  height: 440px
+  padding: 45px
+  border: 1px solid #cdcdcd
+  img
+    width: 100%
+    height: 100%
+    object-fit: contain
+
+.product-tabs-controls
+  li
+    display: inline-block
+    margin-right: 45px
+    font-size: 18px
+    font-weight: 700
+    color: #cdcdcd
+    position: relative
+    padding-bottom: 13px
+    &:last-child
+      margin-right: 0
+    a
+      color: inherit
+      +mt(0s)
+    &:after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 3px
+      background-color: transparent
+      left: 0
+      bottom: 0
+    &:hover
+      color: $text
+    &.ui-tabs-active
+      color: $text
+      &:after
+        +grad-horisont
+
+.product-tab
+  padding-top: 30px
+
+.product-desc
+  font-size: 14px
+  font-weight: 100
+  line-height: 1.9
+  p
+    margin-bottom: 25px
+
+.par-item
+  display: flex
+  justify-content: space-between
+  font-size: 14px
+  font-weight: 300
+  padding: 12px 30px
+  line-height: 1.3
+  &:nth-child(odd)
+    background-color: #eee
+  &-desc
+    width: 70%
+    padding-right: 10px
+  &-val
+    width: 30%
+    font-weight: 700
+    padding-left: 10px
+    text-align: right
+

@@ -142,6 +142,48 @@ $(document).ready(function(){
     });
 
 
+    $('.product-slider').owlCarousel({
+        loop:false,
+        nav:false,
+        autoHeight: true,
+        items: 1,
+        thumbs: true,
+        dots: false,
+        thumbsPrerendered: true,
+        thumbItemClass: 'product-nav',
+        animateIn: "fadeIn",
+        animateOut: "fadeOut",
+    });
+
+    $('.product-slider').photoswipe({
+        showAnimationDuration: 0,
+        hideAnimationDuration: 0
+    });
+
+    $('.spinner-amount').on('click', 'button', function(e){
+        var parent = $(this).parents('.spinner-amount');
+        var input = parent.find('.amount');
+        var amount = input.val();
+        var btn = parent.siblings('.btn');
+
+        var product = $(this).parents('.product');
+        var cartBtn = product.find('.add_to_cart_button');
+
+
+        if (!$(this).is('.down')) {
+            amount++
+        } else {
+            if (amount > 1) amount--
+        }
+
+        input.val(amount).attr('value', amount);
+
+        cartBtn.attr("data-quantity", amount);
+    });
+
+    $('.product-tabs').tabs();
+
+
     $.validate({
         form : '.contact-form',
         scrollToTopOnError: false
@@ -156,7 +198,7 @@ $(document).ready(function(){
         needelem.focus();
     });
 
-    $('input[type="checkbox"]').styler();
+    $('input[type="checkbox"], select').styler();
 
     //E-mail Ajax Send
     $(".contact-form").submit(function() { //Change
