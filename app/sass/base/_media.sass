@@ -32,6 +32,20 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .about-content
+    width: 500px
+
+  .number-item
+    &-number
+      font-size: 20px
+      span
+        font-size: 60px
+    &-desc
+      font-size: 22px
+      line-height: 1.2
+    &:after
+      right: -59px
+
   .product
     &-left
       width: 50%
@@ -131,6 +145,29 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-about
+    padding-bottom: 100px
+
+  .about-wrap
+    max-width: 690px
+    margin-left: auto
+    margin-right: auto
+    flex-direction: column-reverse
+    margin-bottom: 100px
+
+  .about-img
+    width: 100%
+
+  .about-content
+    width: 100%
+    margin-bottom: 40px
+    margin-left: 0
+
+  .number-item
+    width: calc(33.333% - 20px)
+    &:after
+      display: none
 
   .catalog
     grid-template-columns: repeat(2, 1fr)
@@ -242,6 +279,20 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .number-item
+    &-number
+      font-size: 16px
+      span
+        font-size: 40px
+    &-desc
+      font-size: 18px
+
+  .about-wrap
+    padding: 0 15px
+
+  .about-img
+    height: 400px
+
   .catalog
     grid-template-columns: repeat(1, 1fr)
 
@@ -301,6 +352,29 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .about-img
+    height: auto
+    img
+      object-fit: unset
+      width: 100%
+      max-width: 100%
+      height: auto
+
+  .number-block
+    flex-direction: column
+
+  .number-item
+    width: 100%
+    margin-bottom: 60px
+    &:last-child
+      margin-bottom: 0
+    &-number
+      font-size: 20px
+      span
+        font-size: 60px
+    &-desc
+      font-size: 20px
 
   .s-catalog
     padding-bottom: 50px
